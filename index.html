@@ -4,15 +4,169 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>🌞 Weather app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/e736c64d2f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1>Hosting</h1>
-    <img
-      src="https://gimnaziya20.ks.ua/images/vihovna-robota/2021/internet-of-things-analytics.jpg"
-      alt="internet img"
-      width="400px"
-    />
+    <div class="container">
+      <div class="page">
+        <form class="s" id="search-form">
+          <div class="row">
+            <div class="col-7">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control"
+                input type="submit"
+              />
+
+              </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary"
+                id="button"
+                input type="submit"
+              />
+            </div>
+
+             <div class="col-2">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                <img src="images/location.svg" alt="location" width="20px">
+              </button>
+            </div>
+
+          </div>
+
+          
+          
+        <div class="list">
+          <div class="row">
+            <div class="col">
+              <a href="">Paris</a>
+            </div>
+            <div class="col">
+              <a href="">Tokyo</a>
+            </div>
+            <div class="col">
+              <a href="">New York</a>
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="row">
+            <div class="col-6">
+              <img src="images/white sun.svg" class="sun" alt="weather pic" />
+            </div>
+            <div class="row">
+              <div class="col">
+                <h1 class="cityName">London</h1>
+                <p class="date">date and time</p>
+                <span class="units">
+                  <p id="temperature">17</p>
+                  <a href="#" class="celsius-link">°C</a>
+                  <p class="rr">|</p>
+                  <a href="#" class="fahrenheit-link">°F</a>
+                </span>
+                  <p id="description">Sunny</p>
+                  <p id="humidity">Humidity: 61% </p>
+                  <p id="wind">Wind: 6km/h</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="weather_cards">
+          <div class="cards">
+            <div class="row">
+              <div class="col" id="card1">
+                <img
+                  src="images/white sun.svg"
+                  class="card-img-top"
+                  alt="day 1"
+                />
+                <div class="card-body1">
+                  <h3 class="card-title">Mon</h3>
+                  <p class="card-text">23°C</p>
+                </div>
+              </div>
+
+              <div class="col" id="card2">
+                <img src="images/cloud.svg" class="card-img-top" alt="day 2" />
+                <div class="card-body2">
+                  <h3 class="card-title">Tue</h3>
+                  <p class="card-text">20°C</p>
+                </div>
+              </div>
+
+              <div class="col" id="card3">
+                <img src="images/cloud.svg" class="card-img-top" alt="day 3" />
+                <div class="card-body3">
+                  <h3 class="card-title">Wed</h3>
+                  <p class="card-text">18°C</p>
+                </div>
+              </div>
+
+              <div class="col" id="card4">
+                <img src="images/rain.svg" class="card-img-top" alt="day 4" />
+                <div class="card-body4">
+                  <h3 class="card-title">Thu</h3>
+                  <p class="card-text">19°C</p>
+                </div>
+              </div>
+
+              <div class="col" id="card5">
+                <img src="images/storm.svg" class="card-img-top" alt="day 5" />
+                <div class="card-body5">
+                  <h3 class="card-title">Fri</h3>
+                  <p class="card-text">16°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p class="info">Open-source code, by Inna Romanenko</p>
+        <a href="https://github.com/InnaRomm" target="_blank">
+          <i class="fa-brands fa-github-square github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/inna-romanenko-10a214244/">
+          <i class="fa-brands fa-linkedin linkedin" target="_blank"></i>
+        </a>
+        <a href="https://www.instagram.com/_inna_romm_/" target="_blank">
+          <i class="fa-brands fa-instagram-square instagram"></i>
+        </a>
+      </footer>
+    </div>
+    <script src="src/alert.js"></script>
   </body>
 </html>
+
