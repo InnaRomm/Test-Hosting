@@ -1,0 +1,181 @@
+.container {
+  font-family: "Mukta", sans-serif;
+  text-shadow: 5px 10px 20px #865b8896;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/701/original/background.png?1658054965");
+  margin: 30px auto;
+  padding: 30px 40px;
+  width: 650px;
+  color: white;
+  border-radius: 8px;
+}
+#city-input {
+  font-size: 20px;
+  margin: 0 auto;
+  border: white;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 15px;
+  box-shadow: 5px 10px 30px #6c486d96;
+}
+#button {
+  font-size: 20px;
+  font-weight: 250;
+  border: 1px solid white;
+  background-color: #768091d9;
+  color: white;
+  padding: 5px 25px;
+  cursor: pointer;
+  box-shadow: 5px 10px 30px #865b8896;
+}
+#button:hover {
+  background-color: #5c5c71;
+  border: 0.5px solid rgba(255, 255, 255, 0.621);
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+}
+#current-location-button {
+  font-size: 20px;
+  font-weight: 300;
+  border: 1px solid white;
+  background-color: #768091d9;
+  color: white;
+  padding: 6px 20px;
+  cursor: pointer;
+  box-shadow: 5px 10px 30px #865b8896;
+}
+#current-location-button:hover {
+  background-color: #5c5c71;
+  border: 0.5px solid rgba(255, 255, 255, 0.621);
+  color: #ffffff;
+  transition: all 200ms ease-in-out;
+}
+.list {
+  font-size: 18px;
+  font-weight: 400;
+  width: 340px;
+  padding: 8px 0 10px 5px;
+  color: white;
+}
+.body {
+  font-size: 18px;
+  padding: 20px;
+  border: 0.5px solid white;
+  border-radius: 8px;
+  box-shadow: 5px 10px 30px #865b8896;
+  background-color: #76809182;
+}
+.cityName {
+  font-size: 40px;
+}
+.date {
+  font-size: 20px;
+  margin: 0px;
+}
+.units {
+  font-size: 35px;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+}
+#temperature {
+  font-size: 60px;
+  margin: 0px;
+}
+.celsius-link {
+  margin-left: 10px;
+}
+.rr {
+  margin-left: 8px;
+}
+.fahrenheit-link {
+  margin-left: 5px;
+}
+.sun {
+  width: 250px;
+  padding-top: 40px;
+  animation: 600s linear 0s normal none infinite running rot;
+  -webkit-animation: 600s linear 0s normal none infinite running rot;
+}
+@keyframes rot {
+  5% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rot {
+  5% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(360deg);
+  }
+}
+.weather_cards {
+  padding: 20px 15px;
+}
+#card1,
+#card2,
+#card3,
+#card4,
+#card5 {
+  font-size: 20px;
+  text-align: center;
+  background-color: #768091ab;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin: 5px;
+  box-shadow: 5px 10px 30px #865b8896;
+  cursor: pointer;
+}
+#card1:hover,
+#card2:hover,
+#card3:hover,
+#card4:hover,
+#card5:hover {
+  background-color: #5c5c71c4;
+  transition: all 200ms ease-in-out;
+  border: 0.5px solid rgba(255, 255, 255, 0.621);
+}
+.card-img-top {
+  display: block;
+  margin: 30px auto;
+}
+.card-body1 {
+  padding-top: 8px;
+  padding-bottom: 15px;
+}
+.card-body2 {
+  padding-top: 37px;
+  padding-bottom: 15px;
+}
+.card-body3 {
+  padding-top: 37px;
+  padding-bottom: 15px;
+}
+.card-body4 {
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
+.card-body6 {
+  padding-top: 53px;
+  padding-bottom: 15px;
+}
+i {
+  font-size: 30px;
+  padding: 5px;
+}
+.info {
+  margin: 3px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+}
+a:hover {
+  color: #4a4a58;
+  text-decoration: none;
+}
