@@ -2,6 +2,7 @@
   font-family: "Mukta", sans-serif;
   text-shadow: 5px 10px 20px #865b8896;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/701/original/background.png?1658054965");
+  background-size: cover;
   margin: 30px auto;
   padding: 30px 40px;
   width: 650px;
@@ -9,7 +10,7 @@
   border-radius: 8px;
 }
 #city-input {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0 auto;
   border: white;
   border-radius: 5px;
@@ -18,7 +19,7 @@
   box-shadow: 5px 10px 30px #6c486d96;
 }
 #button {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 250;
   border: 1px solid white;
   background-color: #768091d9;
@@ -34,7 +35,7 @@
   transition: all 200ms ease-in-out;
 }
 #current-location-button {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   border: 1px solid white;
   background-color: #768091d9;
@@ -49,35 +50,36 @@
   color: #ffffff;
   transition: all 200ms ease-in-out;
 }
-.list {
-  font-size: 18px;
-  font-weight: 400;
-  width: 340px;
-  padding: 8px 0 10px 5px;
-  color: white;
-}
+
 .body {
-  font-size: 18px;
+  font-size: 16px;
   padding: 20px;
   border: 0.5px solid white;
   border-radius: 8px;
   box-shadow: 5px 10px 30px #865b8896;
   background-color: #76809182;
+  margin: 20px auto 0px auto;
 }
 .cityName {
   font-size: 40px;
+  margin: 0px;
 }
 .date {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0px;
 }
 .units {
-  font-size: 35px;
+  font-size: 25px;
   text-decoration: none;
   background-color: transparent;
   display: flex;
   flex-direction: row;
 }
+
+.date {
+  margin: 0px;
+}
+
 #temperature {
   font-size: 60px;
   margin: 0px;
@@ -91,28 +93,23 @@
 .fahrenheit-link {
   margin-left: 5px;
 }
-.sun {
-  width: 250px;
-  padding-top: 40px;
-  animation: 600s linear 0s normal none infinite running rot;
-  -webkit-animation: 600s linear 0s normal none infinite running rot;
+
+#description {
+  text-transform: capitalize;
+  margin: 0px;
 }
-@keyframes rot {
-  5% {
-    transform: rotate(0deg);
-  }
-  5% {
-    transform: rotate(360deg);
-  }
+
+#humidity {
+  margin: 0px;
 }
-@-webkit-keyframes rot {
-  5% {
-    transform: rotate(0deg);
-  }
-  5% {
-    transform: rotate(360deg);
-  }
+
+.icon {
+  width: 150px;
+  display: block;
+  margin: 0px auto;
+  padding-top: 50px;
 }
+
 .weather_cards {
   padding: 20px 15px;
 }
@@ -121,7 +118,7 @@
 #card3,
 #card4,
 #card5 {
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   background-color: #768091ab;
   border: 1px solid white;
@@ -144,24 +141,24 @@
   margin: 30px auto;
 }
 .card-body1 {
-  padding-top: 8px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 8px;
 }
 .card-body2 {
-  padding-top: 37px;
-  padding-bottom: 15px;
+  padding-top: 34px;
+  padding-bottom: 8px;
 }
 .card-body3 {
-  padding-top: 37px;
-  padding-bottom: 15px;
+  padding-top: 34px;
+  padding-bottom: 8px;
 }
 .card-body4 {
-  padding-top: 18px;
-  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 8px;
 }
 .card-body6 {
-  padding-top: 53px;
-  padding-bottom: 15px;
+  padding-top: 50px;
+  padding-bottom: 8px;
 }
 i {
   font-size: 30px;

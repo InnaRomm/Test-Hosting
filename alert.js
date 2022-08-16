@@ -25,30 +25,6 @@ if (minutes < 10) {
 
 date.innerHTML = `${day} <br /> ${hours}:${minutes}`;
 
-//temperature °F
-let tempX = 17;
-celsiusTemperature = Math.round(tempX);
-let fahrenheitTemperature = Math.round((tempX * 9) / 5 + 32);
-
-function showTemperature1(event) {
-  event.preventDefault();
-  let monday = document.querySelector("#temperature");
-  monday.innerHTML = fahrenheitTemperature;
-}
-
-let tempFahrenheit = document.querySelector(".fahrenheit-link");
-tempFahrenheit.addEventListener("click", showTemperature1);
-
-//temperature °C
-function showTemperature2(event) {
-  event.preventDefault();
-  let monday = document.querySelector("#temperature");
-  monday.innerHTML = 17;
-}
-
-let tempCelsius = document.querySelector(".celsius-link");
-tempCelsius.addEventListener("click", showTemperature2);
-
 // API City/Weather
 
 function showCity(event) {
@@ -73,8 +49,10 @@ function showTemp(response) {
 
   document.querySelector(".cityName").innerHTML = response.data.name;
 
+  let tempCelsius = response.data.main.temp;
+
   let temperatureelement = document.querySelector("#temperature");
-  let temperature = Math.round(response.data.main.temp);
+  let temperature = Math.round(tempCelsius);
   temperatureelement.innerHTML = temperature;
 
   let descriptionelement = document.querySelector("#description");
@@ -86,6 +64,30 @@ function showTemp(response) {
   let windelement = document.querySelector("#wind");
   let wind = Math.round(response.data.wind.speed);
   windelement.innerHTML = `Wind: ${wind} m/sec`;
+
+  let iconelement = document.querySelector("#icon");
+  iconelement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  function showTemperature1(event) {
+    event.preventDefault();
+    let Fahrenheit = document.querySelector("#temperature");
+    let fahrenheitTemperature = (tempCelsius * 9) / 5 + 32;
+    Fahrenheit.innerHTML = Math.round(fahrenheitTemperature);
+  }
+
+  let tempFahrenheit = document.querySelector(".fahrenheit-link");
+  tempFahrenheit.addEventListener("click", showTemperature1);
+
+  function showTemperature2(event) {
+    event.preventDefault();
+    let Celsius = document.querySelector("#temperature");
+    Celsius.innerHTML = Math.round(tempCelsius);
+  }
+
+  let tempteratureCelsius = document.querySelector(".celsius-link");
+  tempteratureCelsius.addEventListener("click", showTemperature2);
 }
 
 //API Location
@@ -111,3 +113,5 @@ function getCurrentPosition() {
 
 let locationButton = document.querySelector("#current-location-button");
 locationButton.addEventListener("click", getCurrentPosition);
+
+//API in cards
